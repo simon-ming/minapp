@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
+	<link rel="stylesheet" href="dist/css/animate.min.css">
+	<script src="dist/js/swiper.min.js"></script>
+	<script src="dist/js/swiper.animate.min.js"></script>
+	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+	<script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_1c4228b8.js"></script>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_882218_dvpfgbh8jtq.css">
+</head>
+<body>
+	<div class="swiper-container bigslider">
+		<div class="music-btn">
+			<!-- <audio class="music-ctrl" autoplay='autoplay' loop="loop">
+				<source src="music/music.mp3">
+			</audio> -->
+		</div>
+
+		<div class="swiper-wrapper">
+			<div class="swiper-slide page1">
+				<div class="logo"></div>
+				<div class="mid-banner">
+					
+				</div>
+				<div class="arrow" >
+					<img src="images/arrow-up-blue.png" class="animated fadeInUp infinite" alt="">
+				</div>
+				<div class="swiper-container downslider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide page2">2</div>
+			<div class="swiper-slide page3">3</div>
+			<div class="swiper-slide page4">4</div>
+			<div class="swiper-slide page5">5</div>
+			<div class="swiper-slide page6">6</div>
+		</div>
+	</div>
+	<div class="cover">
+		<div class="cover-mid">
+			<i class="iconfont icon-houtai-changfangxing"></i>
+			<p>请将屏幕竖向浏览</p>
+		</div>
+	</div>
+	<script>
+    $(function(){
+
+    	// 控制音乐播放
+    	$('.music-btn').click(function(){
+    		console.log(1)
+    		$(this).toggleClass('paused');
+    		if($(this).find('.music-ctrl')[0].paused){
+    			$(this).find('.music-ctrl')[0].play();
+    		}else{
+    			$(this).find('.music-ctrl')[0].pause();
+    		}
+    		$(this).find('.music-ctrl').pause();
+    	})
+
+
+
+		var myswiper=new Swiper('.bigslider',{
+			direction:'vertical',
+			mousewheel:true
+		});
+
+		//超过640不在变换大小,640以内根据屏幕变换大小
+		 function resize(){
+            var width=document.documentElement.clientWidth;
+            if(width>640){
+            	width=640;
+            }
+            document.documentElement.style.fontSize=width/3.2+'px';
+        }
+        // 判断是否横屏
+        function isphone(){
+            var width=document.documentElement.clientWidth;
+            var height=document.documentElement.clientHeight;
+            if(width>height){
+            	$('.cover').show();
+            	console.log(1)
+            }else{
+            	$('.cover').hide();
+            }
+        }
+        isphone();
+        resize();
+        window.addEventListener('orientationchange',resize)
+        window.addEventListener('orientationchange',isphone)
+        window.addEventListener('resize',resize)
+        window.addEventListener('resize',isphone)
+    	
+    })
+	</script>
+</body>
+</html>

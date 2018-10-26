@@ -1,0 +1,151 @@
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,input,fieldset,legend,img,dt,dd,dl{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+ul,ol,li{
+    list-style: none;
+}
+a,u{
+    text-decoration: none;
+}
+i,em{
+    font-style: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+img{
+    display: block;
+    border:0;
+}
+input{
+    border:0;
+}
+.clearfix{
+    zoom:1;
+}
+.clearfix:after{
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    overflow:hidden;
+    visibility: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 31.25vw;
+}
+body{
+    overflow: hidden;
+}
+.swiper-container{
+    width: 3.2rem;
+    height: 5.68rem;
+    max-width: 640px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+}
+.swiper-container .swiper-slide{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.cover-mid{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+}
+.cover-mid i{
+    font-size: 0.5rem;
+    color: #fff;
+}
+.cover-mid p{
+    font-size: 0.17rem;
+    color: #fff;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+    
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.page3{
+    background: green;
+}
+.page4{
+    background: blue;
+}
+.page5{
+    background: yellow;
+}
+.page6{
+    background: pink;
+}
+.logo{
+    width: 1.01rem;
+    height: 0.23rem;
+    background: url(../images/logo_gray.png) no-repeat;
+    background-size: cover;
+    margin:0.08rem;
+}
+.mid-banner{
+    height: 4rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-size: cover;
+    background: url(../images/indexSnacky.jpg) no-repeat;
+    background-position: center center;
+}
+.arrow{
+    width: 38px;
+    height: 60px;
+    position: absolute;
+    top:85%;
+    left: 48%;
+}
+.arrow img{
+    animation-duration: 1.5s;
+}
+.music-btn{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background:url(../images/musicBtn.png);
+    background-position: center;
+}
+.paused{
+    background:url(../images/musicBtnOff.png) no-repeat;
+    background-position: center;
+}
