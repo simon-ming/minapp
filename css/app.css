@@ -45,9 +45,9 @@ html{
 body{
     overflow: hidden;
 }
-.swiper-container{
+.bigslider{
     width: 3.2rem;
-    height: 5.68rem;
+    height: 100vh;
     max-width: 640px;
     left: 0;
     top: 0;
@@ -55,7 +55,7 @@ body{
     bottom: 0;
     margin:auto;
 }
-.swiper-container .swiper-slide{
+.bigslider>.swiper-wrapper>.swiper-slide{
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -91,24 +91,23 @@ body{
 .page1{
     width: 100%;
     height: 100%;
-    
 }
 .page2{
     width: 100%;
     height: 100%;
-    background: red;
+    background: #fe657a;
 }
 .page3{
-    background: green;
+    background: #09bee3;
 }
 .page4{
-    background: blue;
+    background: #36a15c;
 }
 .page5{
-    background: yellow;
+    background: #669cff;
 }
 .page6{
-    background: pink;
+    background: #fff;
 }
 .logo{
     width: 1.01rem;
@@ -120,7 +119,7 @@ body{
 .mid-banner{
     height: 4rem;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 10%;
     background-size: cover;
     background: url(../images/indexSnacky.jpg) no-repeat;
     background-position: center center;
@@ -129,8 +128,9 @@ body{
     width: 38px;
     height: 60px;
     position: absolute;
-    top:85%;
+    top:90%;
     left: 48%;
+    z-index: 10;
 }
 .arrow img{
     animation-duration: 1.5s;
@@ -148,4 +148,213 @@ body{
 .paused{
     background:url(../images/musicBtnOff.png) no-repeat;
     background-position: center;
+}
+.pg1-main{
+    position: relative;
+}
+
+.bigslider .downslider{
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.bigslider .downslider .swiper-slide{
+    transition-timing-function: linear;
+}
+.cp1{
+    background: url(../images/indexHouse.jpg) no-repeat;
+    background-size: cover;
+}
+.cp2{
+    background: url(../images/indexHouse0.jpg) no-repeat;
+    background-size: cover;
+}
+.pg1-animate{
+    width: 1.79rem;
+    height: 0.7rem;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -0.9rem;
+}
+.ani-img{
+    position: absolute;
+}
+.delay_200ms{
+    animation-delay: 200ms;
+}
+.delay_500ms{
+    animation-delay: 500ms;
+}
+.delay_600ms{
+    animation-delay: 600ms;
+}
+.delay_700ms{
+    animation-delay: 700ms;
+}
+.delay_800ms{
+    animation-delay: 800ms;
+}
+.delay_900ms{
+    animation-delay: 900ms;
+}
+.delay_1000ms{
+    animation-delay: 1000ms;
+}
+.delay_1100ms{
+    animation-delay: 1100ms;
+}
+.delay_1200ms{
+    animation-delay: 1200ms;
+}
+.delay_1300ms{
+    animation-delay: 1300ms;
+}
+.delay_1400ms{
+    animation-delay: 1400ms;
+}
+.delay_1500ms{
+    animation-delay: 1500ms;
+}
+.delay_1600ms{
+    animation-delay: 1600ms;
+}
+.delay_1700ms{
+    animation-delay: 1700ms;
+}
+.delay_1800ms{
+    animation-delay: 1800ms;
+}
+.delay_1900ms{
+    animation-delay: 1900ms;
+}
+.lights,.girl{
+    width: 2.74rem;
+    height: 4.47rem;
+    position: absolute;
+    right: 0;
+    top: 0.2rem;
+}
+.girl{
+    left: 0;
+}
+.man,.star,.light{
+    position: absolute;
+}
+.left-text{
+    width: 0.61rem;
+    height: 1.24rem;
+    position: absolute;
+}
+.right-text{
+    width: 0.57rem;
+    height: 1.69rem;
+    position: absolute;
+}
+.right-new{
+    width: 0.61rem;
+    height: 1.24rem;
+    position: absolute;
+}
+.left-text{
+    top: 25px;
+    left: 25px;
+}
+.left-text img,.right-text img{
+    position: absolute;
+}
+.right-text{
+    right: 25px;
+    bottom: 25px;
+}
+.pg4-main{
+    height: 4.51rem;
+    width: 100%;
+}
+.pg4-main img{
+    position: absolute;
+}
+.downtitle{
+    width: 0.83rem;
+    height: 0.31rem;
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+.downtitle img{
+    position: absolute;
+}
+.summer,.interval{
+    padding: 14% 0 0;
+}
+.summer img,.interval img{
+    margin: 0 auto;
+}
+.sunmmer-title{
+    position: absolute;
+    top: 50%;
+}
+.sunmmer-title img{
+    position: absolute;
+}
+.title-txt{
+    width: 100%;
+}
+.title-txt img{
+    margin: 0 auto;
+}
+.btn-box{
+    width: 100%;
+    height: 0.58rem;
+    position: absolute;
+    bottom: 12%;
+}
+.btn-box>img{
+    margin: 0 auto 0.1rem;
+}
+.last-btns{
+    width: 100%;
+    height: 0.27rem;
+    text-align:center;
+}
+.last-btns{
+    display: flex;
+    justify-content: center;
+}
+.last-btns>a:last-child{
+    margin-left: 0.2rem;
+}
+.search{
+    width: 2.24rem;
+    height: 0.2rem;
+    margin: 0.64rem auto;
+    box-sizing: border-box;
+    border: 1px solid #959ba0;
+}
+.search img{
+    float: left;
+}
+
+.ck-btn{
+    width: 0.25rem;
+    height: 0.19rem;
+    float: right;
+        background: url(../images/iconsZoom.png) 50% 50% no-repeat #669cff;
+}
+.cover-box{
+    float: left;
+    width: 0.8rem;
+    height: 0.12rem;
+    margin: 7px 0 7px 7px;
+    position: relative;
+    overflow: hidden;
+}
+.white-cover{
+    width: 0.8rem;
+    height: 0.12rem;
+    background: #fff;
+    position: absolute;
+    animation-duration: 5s;
 }

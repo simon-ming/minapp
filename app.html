@@ -8,39 +8,149 @@
 	<link rel="stylesheet" href="dist/css/animate.min.css">
 	<script src="dist/js/swiper.min.js"></script>
 	<script src="dist/js/swiper.animate.min.js"></script>
-	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
 	<script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_1c4228b8.js"></script>
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_882218_dvpfgbh8jtq.css">
 </head>
 <body>
+	<!-- 大轮播 -->
 	<div class="swiper-container bigslider">
 		<div class="music-btn">
 			<!-- <audio class="music-ctrl" autoplay='autoplay' loop="loop">
 				<source src="music/music.mp3">
 			</audio> -->
 		</div>
-
+  
 		<div class="swiper-wrapper">
 			<div class="swiper-slide page1">
 				<div class="logo"></div>
-				<div class="mid-banner">
-					
-				</div>
-				<div class="arrow" >
+				<div class="arrow ani delay_500ms"  swiper-animate-effect='fadeIn'>
 					<img src="images/arrow-up-blue.png" class="animated fadeInUp infinite" alt="">
+				</div>
+				<div class="pg1-main">
+					<div class="mid-banner">
+						<div class="pg1-animate">
+							<div class="ani-img animated zoomIn delay_500ms ani" swiper-animate-effect='zoomIn' ><img src="images/indexTxtThereis.png" alt=""></div>
+							<div class="ani-img animated zoomIn delay_800ms ani" swiper-animate-effect='zoomIn' ><img src="images/indexTxtLife.png" alt=""></div>
+							<div class="ani-img animated zoomIn delay_1100ms ani" swiper-animate-effect='zoomIn' ><img src="images/indexTxtMoreTo.png" alt=""></div>
+							<div class="ani-img animated zoomIn delay_1400ms ani" swiper-animate-effect='zoomIn' ><img src="images/indexTxtNestle.png" alt=""></div>
+							<div class="ani-img animated zoomIn delay_1600ms ani" swiper-animate-effect='zoomIn' ><img src="images/indexTxtCnLife.png" alt=""></div>
+							<div class="ani-img animated zoomIn delay_1900ms ani" swiper-animate-effect='zoomIn' ><img src="images/indexTxtCnNestle.png" alt=""></div>
+						</div>
+					</div>
 				</div>
 				<div class="swiper-container downslider">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"></div>
+						<div class="swiper-slide cp1"></div>
+						<div class="swiper-slide cp2"></div>
 					</div>
 				</div>
 			</div>
-			<div class="swiper-slide page2">2</div>
-			<div class="swiper-slide page3">3</div>
-			<div class="swiper-slide page4">4</div>
-			<div class="swiper-slide page5">5</div>
-			<div class="swiper-slide page6">6</div>
+			<div class="swiper-slide page2">
+				<div class="arrow ani delay_500ms" swiper-animate-effect='fadeIn' >
+					<img src="images/arrow-up.png" class="animated fadeInUp infinite" alt="">
+				</div>
+				<div class="lights">
+					<div class="man ani" swiper-animate-effect='bounceInDown' ><img src="images/boy.gif" alt=""></div>
+					<div class="star ani delay_200ms" swiper-animate-effect='fadeIn'><img class="animated fadeIn infinite" src="images/starsRight.png" alt=""></div>
+					<div class="light ani delay_200ms" swiper-animate-effect='fadeIn'><img class="animated fadeIn infinite delay_500ms" src="images/lightsRight.png" alt=""></div>
+				</div>
+				<div class="left-text">
+					<img src="images/selerTxtLeft01.png" class="ani delay_1000ms" swiper-animate-effect='bounceInLeft' alt="">
+					<img src="images/selerTxtLeft02.png" class="ani delay_1200ms" swiper-animate-effect='bounceInLeft' alt="">
+					<img src="images/selerTxtLeft03.png" class="ani delay_1400ms" swiper-animate-effect='bounceInLeft' alt="">
+					<img src="images/selerTxtLeft04.png" class="ani delay_1600ms" swiper-animate-effect='bounceInLeft' alt="">
+				</div>
+				<div class="right-text">
+					<img src="images/selerTxtRight.png" class="ani delay_800ms" swiper-animate-effect='bounceInRight' alt="">
+					<img src="images/selerTxtRightMe.png" class="ani" swiper-animate-effect='zoomIn' alt="">
+					<img src="images/selerTxtRightTitle.png" class="ani delay_500ms" swiper-animate-effect='bounceInRight' alt="">
+					
+				</div>
+			</div>
+			<div class="swiper-slide page3">
+				<div class="arrow ani delay_500ms" swiper-animate-effect='fadeIn' >
+					<img src="images/arrow-up.png" class="animated fadeInUp infinite" alt="">
+				</div>
+				<div class="girl">
+					<div class="man ani" swiper-animate-effect='bounceInDown' ><img src="images/girl.gif" alt=""></div>
+					<div class="star ani delay_200ms" swiper-animate-effect='fadeIn'><img class="animated fadeIn infinite" src="images/lightsLeft.png" alt=""></div>
+					<div class="light ani delay_200ms" swiper-animate-effect='fadeIn'><img class="animated fadeIn infinite delay_500ms" src="images/starsLeft.png" alt=""></div>
+				</div>
+				<div class="right-text right-new">
+					<img src="images/marketTxtRight04.png" class="ani delay_1000ms" swiper-animate-effect='bounceInRight' alt="">
+					<img src="images/marketTxtRight03.png" class="ani delay_1200ms" swiper-animate-effect='bounceInRight' alt="">
+					<img src="images/marketTxtRight02.png" class="ani delay_1400ms" swiper-animate-effect='bounceInRight' alt="">
+					<img src="images/marketTxtRight01.png" class="ani delay_1600ms" swiper-animate-effect='bounceInRight' alt="">
+				</div>
+				<div class="left-text left-new">
+					<img src="images/marketTxtLeft.png" class="ani delay_800ms" swiper-animate-effect='bounceInLeft' alt="">
+					<img src="images/selerTxtRightMe.png" class="ani" swiper-animate-effect='zoomIn' alt="">
+					<img src="images/marketTxtLeftTitle.png" class="ani delay_500ms" swiper-animate-effect='zoomIn' alt="">
+				</div>
+			</div>
+			<div class="swiper-slide page4">
+				<div class="pg4-main">
+					<img swiper-animate-effect='bounceIn' class="ani delay_500ms" src="images/catFix.gif" alt="">
+					<img swiper-animate-effect='bounceIn' class="ani " src="images/dogFix.gif" alt="">
+					<img swiper-animate-effect='fadeIn' class="ani delay_700ms" src="images/FixDogTxt.png" alt="">
+					<img swiper-animate-effect='fadeIn' class="ani delay_900ms" src="images/FixCatTxt.png" alt="">
+					<img swiper-animate-effect='fadeInLeft' class="ani delay_1100ms" src="images/FixDogBtn.png" alt="">
+					<img swiper-animate-effect='fadeInRight' class="ani delay_1300ms" src="images/FixCatBtn.png" alt="">
+					<div class="plight ani delay_1500ms" swiper-animate-effect='fadeIn'><img  class="ani fadeIn infinite" src="images/FixDogLight.png" alt=""></div>
+					<div class="plight ani delay_1700ms" swiper-animate-effect='fadeIn'><img  class="ani fadeIn infinite delay_5
+						00ms" src="images/FixCatLight.png" alt=""></div>
+				</div>
+				<div class="downtitle ani delay_1800ms" swiper-animate-effect="fadeIn">
+					<img src="images/FixArrowTxt.png" alt="">
+					<img src="images/FixArrowTxtYou.png" alt="" class="ani bounce infinite">
+				</div>
+				<div class="arrow ani delay_500ms" swiper-animate-effect='fadeIn' >
+					<img src="images/arrow-up.png" class="animated fadeInUp infinite" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide page5">
+				<div class="summer ani" swiper-animate-effect='fadeIn'>
+					<img src="images/titlesAcoreSummer.png" alt="">
+				</div>
+				<div class="interval" class="ani delay_400ms" swiper-animate-effect='fadeIn'>
+					<img src="images/titlesDots.png" alt="">
+				</div>
+				<div class="sunmmer-title">
+					<img src="images/jobTitle01.png" alt="" class="ani delay_1500ms" swiper-animate-effect='bounceInDown' >
+					<img src="images/jobTitle02.png" alt="" class="ani delay_1400ms" swiper-animate-effect='bounceInDown' >
+					<img src="images/jobTitle03.png" alt="" class="ani delay_1300ms" swiper-animate-effect='bounceInDown' >
+					<img src="images/jobTitle04.png" alt="" class="ani delay_1200ms" swiper-animate-effect='bounceInDown' >
+					<img src="images/jobTitle05.png" alt="" class="ani delay_1100ms" swiper-animate-effect='bounceInDown' >
+					<img src="images/jobTitle06.png" alt="" class="ani delay_1000ms" swiper-animate-effect='bounceInDown' >
+					<img src="images/jobTitle07.png" alt="" class="ani delay_900ms" swiper-animate-effect='bounceInDown' >
+					<img src="images/jobTitle08.png" alt="" class="ani delay_800ms" swiper-animate-effect='bounceInDown' >
+				</div>
+				<div class="arrow ani delay_500ms" swiper-animate-effect='fadeIn' >
+					<img src="images/arrow-up.png" class="animated fadeInUp infinite" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide page6">
+				<div class="logo ani" swiper-animate-effect='fadeIn'></div>
+				<div class="title-txt ani delay_200ms" swiper-animate-effect='fadeIn'>
+					<img src="images/endTxt2015.jpg" alt="" >
+				</div>
+				<div class="search ani delay_500ms"  swiper-animate-effect='fadeIn'>
+					<div class="cover-box">
+						<img src="images/searchTxt.png" alt=""  >
+						<div class="white-cover ani delay_800ms"  swiper-animate-effect='fadeOutRightBig'></div>
+					</div>
+					
+					<div class="ck-btn ani delay_1700ms" swiper-animate-effect='click'></div>
+				</div>
+				<div class="btn-box delay_1900ms ani" swiper-animate-effect='fadeIn'>
+					<img src="images/endBtnGuide.png" alt="" >
+					<div class="last-btns">
+						<a href="`"><img src="images/btnFollowNestle.png" alt=""></a>
+						<a href="`"><img src="images/btnJoin.png" alt=""></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="cover">
@@ -51,24 +161,42 @@
 	</div>
 	<script>
     $(function(){
-
     	// 控制音乐播放
     	$('.music-btn').click(function(){
     		console.log(1)
     		$(this).toggleClass('paused');
-    		if($(this).find('.music-ctrl')[0].paused){
-    			$(this).find('.music-ctrl')[0].play();
-    		}else{
-    			$(this).find('.music-ctrl')[0].pause();
-    		}
-    		$(this).find('.music-ctrl').pause();
+    		// if($(this).find('.music-ctrl')[0].paused){
+    		// 	$(this).find('.music-ctrl')[0].play();
+    		// }else{
+    		// 	$(this).find('.music-ctrl')[0].pause();
+    		// }
+    		// $(this).find('.music-ctrl').pause();
     	})
 
 
-
+    	//大轮播
 		var myswiper=new Swiper('.bigslider',{
 			direction:'vertical',
-			mousewheel:true
+			mousewheel:true,
+			on:{
+			      init: function(){
+			        swiperAnimateCache(this); //隐藏动画元素 
+			        swiperAnimate(this); //初始化完成开始动画
+			      }, 
+			      slideChangeTransitionEnd: function(){ 
+			        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+			        //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+			      } 
+			    }
+		});
+
+		// 底部轮博
+		var dswiper=new Swiper('.downslider',{
+			speed:30000,
+			autoplay: {
+   				delay: 10,//1秒切换一次
+  			},
+			loop:true,
 		});
 
 		//超过640不在变换大小,640以内根据屏幕变换大小
