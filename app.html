@@ -16,9 +16,9 @@
 	<!-- 大轮播 -->
 	<div class="swiper-container bigslider">
 		<div class="music-btn">
-			<!-- <audio class="music-ctrl" autoplay='autoplay' loop="loop">
+			<audio class="music-ctrl" autoplay='autoplay' loop="loop">
 				<source src="music/music.mp3">
-			</audio> -->
+			</audio>
 		</div>
   
 		<div class="swiper-wrapper">
@@ -165,12 +165,12 @@
     	$('.music-btn').click(function(){
     		console.log(1)
     		$(this).toggleClass('paused');
-    		// if($(this).find('.music-ctrl')[0].paused){
-    		// 	$(this).find('.music-ctrl')[0].play();
-    		// }else{
-    		// 	$(this).find('.music-ctrl')[0].pause();
-    		// }
-    		// $(this).find('.music-ctrl').pause();
+    		if($(this).find('.music-ctrl')[0].paused){
+    			$(this).find('.music-ctrl')[0].play();
+    		}else{
+    			$(this).find('.music-ctrl')[0].pause();
+    		}
+    		$(this).find('.music-ctrl').pause();
     	})
 
 
